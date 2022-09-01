@@ -3,7 +3,7 @@
 // which provides an identical API except it doesn't use promises
 // and instead always resolves synchronously. This allows us to
 // use it in Foxx (which doesn't support async resolution).
-const gql = require('graphql-sync');
+const gql = require('graphql');
 // If you want to use graphql-sync in your own Foxx services
 // make sure to install it in the Foxx service's folder using
 // the "npm" command-line tool and to include the "node_modules"

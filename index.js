@@ -1,9 +1,10 @@
 'use strict';
-const schema = require('./schema');
+const graphqlSchema = require('./schema');
 const graphql = require('graphql');
 const createGraphqlRouter = require('@arangodb/foxx/graphql');
 
-const router = createGraphqlRouter({schema,
+const router = createGraphqlRouter({
+  schema: graphqlSchema,
   graphiql: true,
   graphql: graphql,
 })
