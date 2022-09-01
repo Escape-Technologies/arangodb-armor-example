@@ -5,7 +5,6 @@
 ```bash
 yarn
 docker run -p 8529:8529 -e ARANGO_ROOT_PASSWORD=openSesame arangodb/arangodb:3.9.2
-zip -r ../out.zip arangodb-armor-example
 ```
 
 1. Head to Webview: [http://localhost:8529](http://localhost:8529)
@@ -13,6 +12,9 @@ zip -r ../out.zip arangodb-armor-example
 2. Credentials: `root:openSesame`
 
 3. Create new service using Github and `Escape-Technologies/arangodb-armor-example` path.
+
+![ArangoDB Webview](doc/1.png)
+![ArangoDB Webview](doc/2.png)
 
 ## Sources
 

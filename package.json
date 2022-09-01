@@ -1,6 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "graphql": "^15.0.0"
+    "@escape.tech/graphql-armor": "1.1.0",
+    "graphql": "15.8.0"
   }
 }
