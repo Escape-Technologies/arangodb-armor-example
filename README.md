@@ -1,10 +1,11 @@
-# arangodb
+# arangodb-armor-example
 
 ## Installation
 
 ```bash
 yarn
 docker run -p 8529:8529 -e ARANGO_ROOT_PASSWORD=openSesame arangodb/arangodb:3.9.2
+zip -r ../out.zip arangodb-armor-example
 ```
 
 1. Head to Webview: [http://localhost:8529](http://localhost:8529)

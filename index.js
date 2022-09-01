@@ -7,6 +7,9 @@ const router = createGraphqlRouter({
   schema: graphqlSchema,
   graphiql: true,
   graphql: graphql,
+  formatError: error => ({
+    message: error.message,
+  }),    
 })
 .summary('GraphQL endpoint')
 .description('GraphQL endpoint for the Star Wars GraphQL example.');
