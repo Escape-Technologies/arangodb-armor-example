@@ -10,7 +10,9 @@ const enhancements = armor.protect();
 const router = createGraphqlRouter({
   schema: graphqlSchema,
   graphiql: true,
-  graphql: graphql,   
+  graphql: graphql,
+  plugins: enhancements.plugins,
+  validationRules: enhancements.validationRules,
 })
 .summary('GraphQL endpoint')
 .description('GraphQL endpoint for the Star Wars GraphQL example.');
